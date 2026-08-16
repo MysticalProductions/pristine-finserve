@@ -2,7 +2,10 @@
 
 return [
     'name' => 'Pristine Finserve',
-    'url' => getenv('APP_URL') ?: 'http://localhost/pristine-finserve',
+    'url' => getenv('APP_URL') ?: (
+    (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http')
+    . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost')
+),
     'env' => getenv('APP_ENV') ?: 'production',
     'debug' => (bool) (getenv('APP_DEBUG') ?: false),
     'timezone' => 'Asia/Kolkata',
