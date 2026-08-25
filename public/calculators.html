@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Calculators – Pristine Finserve</title>
+  <meta name="description" content="Use our interactive financial calculators: EMI Calculator, Home Loan Calculator, SIP Calculator, Eligibility Calculator, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1F44'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23D4A843' font-size='18' font-weight='bold' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">PF</div>
+        <span class="logo-text">Pristine<span>Finserve</span></span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">About <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="about.html" class="nav-dropdown-link"><i class="bi bi-building"></i> About Us</a>
+            <a href="about.html#team" class="nav-dropdown-link"><i class="bi bi-people"></i> Our Team</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Services <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="nav-dropdown-link"><i class="bi bi-grid"></i> All Services</a>
+            <a href="services.html#consulting" class="nav-dropdown-link"><i class="bi bi-chat-dots"></i> Financial Consulting</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Loans <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="loans.html" class="nav-dropdown-link"><i class="bi bi-bank"></i> All Loan Products</a>
+            <a href="loan-detail.html?type=home" class="nav-dropdown-link"><i class="bi bi-house"></i> Home Loan</a>
+            <a href="loan-detail.html?type=personal" class="nav-dropdown-link"><i class="bi bi-person"></i> Personal Loan</a>
+            <a href="loan-detail.html?type=business" class="nav-dropdown-link"><i class="bi bi-briefcase"></i> Business Loan</a>
+            <a href="loan-detail.html?type=education" class="nav-dropdown-link"><i class="bi bi-book"></i> Education Loan</a>
+            <a href="loan-detail.html?type=vehicle" class="nav-dropdown-link"><i class="bi bi-car-front"></i> Vehicle Loan</a>
+            <a href="loan-detail.html?type=property" class="nav-dropdown-link"><i class="bi bi-building"></i> Loan Against Property</a>
+          </div>
+        </div>
+        <a href="calculators.html" class="nav-link active">Calculators</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-sm">Get Started</a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Calculators</span>
+      </div>
+      <h1 data-aos="fade-up">Financial Calculators</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Plan your finances with our interactive calculators and make informed decisions.</p>
+    </div>
+  </section>
+
+  <!-- Calculator Cards Navigation -->
+  <section class="section section-light" id="calculator-nav">
+    <div class="container">
+      <div class="calculator-grid">
+        <a href="#emi" class="calc-card active" data-aos="fade-up"><div class="icon">📊</div><h5>EMI Calculator</h5><p>Calculate monthly installments</p></a>
+        <a href="#home" class="calc-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">🏠</div><h5>Home Loan Calculator</h5><p>Plan your dream home budget</p></a>
+        <a href="#sip" class="calc-card" data-aos="fade-up" data-aos-delay="200"><div class="icon">📈</div><h5>SIP Calculator</h5><p>Estimate investment returns</p></a>
+        <a href="#eligibility" class="calc-card" data-aos="fade-up"><div class="icon">✅</div><h5>Affordability/Eligibility Calculator</h5><p>Check your loan eligibility</p></a>
+        <a href="#interest" class="calc-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">💰</div><h5>Interest Calculator</h5><p>Compare interest scenarios</p></a>
+        <a href="#investment" class="calc-card" data-aos="fade-up" data-aos-delay="200"><div class="icon">📊</div><h5>Returns Calculator</h5><p>Project investment growth</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI Calculator -->
+  <section class="section" id="emi">
+    <div class="container">
+      <div class="section-header-left" data-aos="fade-up">
+        <span class="section-label">Calculator</span>
+        <h2 class="section-title">EMI Calculator</h2>
+        <p class="section-subtitle">Calculate your monthly EMI, total interest, and total payment instantly.</p>
+      </div>
+
+      <div class="calculator-wrapper" data-aos="fade-up">
+        <div class="calculator-inputs">
+          <div class="form-group">
+            <label>Loan Amount (₹) <span class="value" id="emiAmountDisplay">₹50,00,000</span></label>
+            <input type="range" class="range-slider" id="emiLoanAmount" min="100000" max="10000000" step="50000" value="5000000">
+            <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--color-text-muted);">
+              <span>₹1,00,000</span>
+              <span>₹1,00,00,000</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Interest Rate (% p.a.) <span class="value" id="emiRateDisplay">8.50%</span></label>
+            <input type="range" class="range-slider" id="emiRate" min="5" max="20" step="0.1" value="8.5">
+            <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--color-text-muted);">
+              <span>5%</span>
+              <span>20%</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Loan Tenure (Years) <span class="value" id="emiTenureDisplay">20 Years</span></label>
+            <input type="range" class="range-slider" id="emiTenure" min="1" max="30" step="1" value="20">
+            <div style="display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--color-text-muted);">
+              <span>1 Year</span>
+              <span>30 Years</span>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-primary btn-sm" onclick="document.getElementById('emiTableContainer').style.display = document.getElementById('emiTableContainer').style.display === 'none' ? 'block' : 'none'">
+            <i class="bi bi-table"></i> View Amortization Schedule
+          </button>
+        </div>
+
+        <div class="calculator-result">
+          <div class="emi-amount" id="emiResult">₹43,070</div>
+          <div class="emi-label">Monthly EMI</div>
+
+          <div class="chart-container">
+            <canvas id="emiChart"></canvas>
+          </div>
+
+          <div class="result-details">
+            <div class="result-detail-card">
+              <div class="label">Principal</div>
+              <div class="value" id="emiPrincipal">₹50,00,000</div>
+            </div>
+            <div class="result-detail-card">
+              <div class="label">Total Interest</div>
+              <div class="value" id="emiInterest">₹53,36,845</div>
+            </div>
+            <div class="result-detail-card">
+              <div class="label">Total Payment</div>
+              <div class="value" id="emiTotal">₹1,03,36,845</div>
+            </div>
+            <div class="result-detail-card">
+              <div class="label">Payoff Date</div>
+              <div class="value" id="emiPayoff">Jun 2046</div>
+            </div>
+          </div>
+
+          <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);flex-wrap:wrap;justify-content:center;">
+            <button class="btn btn-primary btn-sm" onclick="downloadEMIPDF()"><i class="bi bi-download"></i> Download PDF</button>
+            <a href="contact.html#inquiry" class="btn btn-gold btn-sm">Apply Now <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amortization Table -->
+      <div id="emiTableContainer" style="display:none;margin-top:var(--space-8);" data-aos="fade-up">
+        <h4 style="margin-bottom:var(--space-4);">Amortization Schedule</h4>
+        <div style="max-height:400px;overflow-y:auto;border:1px solid var(--color-border);border-radius:var(--radius-lg);">
+          <table class="amortization-table" id="amortizationTable">
+            <thead>
+              <tr><th>Year</th><th>Principal Paid</th><th>Interest Paid</th><th>Balance</th></tr>
+            </thead>
+            <tbody id="amortizationBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Calculators Preview -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">More Tools</span>
+        <h2 class="section-title">Other Financial Tools</h2>
+      </div>
+      <div class="calculator-grid" style="max-width:800px;margin:0 auto;">
+        <div class="calc-card" data-aos="fade-up"><div class="icon">🏠</div><h5 id="home">Home Loan Calculator</h5><p>Includes property tax & insurance estimates</p></div>
+        <div class="calc-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">📈</div><h5 id="sip">SIP Calculator</h5><p>Estimate wealth creation through SIPs</p></div>
+        <div class="calc-card" data-aos="fade-up" data-aos-delay="200"><div class="icon">✅</div><h5 id="eligibility">Affordability/Eligibility Calculator</h5><p>Check how much loan you qualify for</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <span class="section-label" style="color:var(--color-gold);">Ready to Apply?</span>
+        <h2 class="display-2" style="color:var(--color-deep-navy);">Get the Best Rates Today</h2>
+        <p>Use our calculators to plan your finances, then apply with confidence.</p>
+        <div class="cta-actions">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-lg">Apply Now <i class="bi bi-arrow-right"></i></a>
+          <a href="tel:+919899360744" class="btn btn-outline btn-lg"><i class="bi bi-telephone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Pristine<span>Finserve</span></h4>
+          <p>Your trusted partner in financial solutions since 2011.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div><h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="calculators.html">Calculators</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div><h5>Loan Products</h5>
+          <ul class="footer-links">
+            <li><a href="loan-detail.html?type=home">Home Loan</a></li>
+            <li><a href="loan-detail.html?type=personal">Personal Loan</a></li>
+            <li><a href="loan-detail.html?type=business">Business Loan</a></li>
+            <li><a href="loan-detail.html?type=education">Education Loan</a></li>
+            <li><a href="loan-detail.html?type=vehicle">Vehicle Loan</a></li>
+            <li><a href="loan-detail.html?type=property">Loan Against Property</a></li>
+          </ul>
+        </div>
+        <div><h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> RT-89 &amp; 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304</li>
+            <li><i class="bi bi-telephone"></i> +91 9899360744</li>
+            <li><i class="bi bi-envelope"></i> info@pristinefinserve.com</li>
+            <li><i class="bi bi-clock"></i> Mon - Sat: 9:30 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pristine Finserve</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/disclaimer">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919899360744" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init({duration:600,once:true,offset:100,easing:'ease-out-cubic'});
+
+    // EMI Calculator Logic
+    let emiChart = null;
+
+    function formatCurrency(num) {
+      return '₹' + Number(num).toLocaleString('en-IN');
+    }
+
+    function calculateEMI(P, R, N) {
+      const r = R / (12 * 100);
+      const n = N * 12;
+      if (r === 0) return P / n;
+      const emi = P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+      return emi;
+    }
+
+    function updateEMICalculator() {
+      const P = parseFloat(document.getElementById('emiLoanAmount').value);
+      const R = parseFloat(document.getElementById('emiRate').value);
+      const N = parseFloat(document.getElementById('emiTenure').value);
+
+      document.getElementById('emiAmountDisplay').textContent = formatCurrency(P);
+      document.getElementById('emiRateDisplay').textContent = R + '%';
+      document.getElementById('emiTenureDisplay').textContent = N + ' Years';
+
+      const emi = calculateEMI(P, R, N);
+      const totalPayment = emi * N * 12;
+      const totalInterest = totalPayment - P;
+
+      document.getElementById('emiResult').textContent = '₹' + Math.round(emi).toLocaleString('en-IN');
+      document.getElementById('emiPrincipal').textContent = formatCurrency(P);
+      document.getElementById('emiInterest').textContent = formatCurrency(Math.round(totalInterest));
+      document.getElementById('emiTotal').textContent = formatCurrency(Math.round(totalPayment));
+
+      const now = new Date();
+      const payoff = new Date(now.getFullYear() + N, now.getMonth());
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      document.getElementById('emiPayoff').textContent = months[payoff.getMonth()] + ' ' + payoff.getFullYear();
+
+      // Update chart
+      if (emiChart) emiChart.destroy();
+      const ctx = document.getElementById('emiChart').getContext('2d');
+      emiChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Principal', 'Total Interest'],
+          datasets: [{
+            data: [P, Math.round(totalInterest)],
+            backgroundColor: ['#1B5AAE', '#D4A843'],
+            borderWidth: 0,
+            hoverOffset: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '65%',
+          plugins: {
+            legend: { position: 'bottom', labels: { padding: 15, usePointStyle: true } }
+          }
+        }
+      });
+
+      // Amortization table
+      const tbody = document.getElementById('amortizationBody');
+      tbody.innerHTML = '';
+      const rMonthly = R / (12 * 100);
+      const nMonths = N * 12;
+      let balance = P;
+      for (let year = 1; year <= N; year++) {
+        let principalPaid = 0, interestPaid = 0;
+        for (let m = 1; m <= 12; m++) {
+          const monthIndex = (year - 1) * 12 + m;
+          if (monthIndex > nMonths) break;
+          const interest = balance * rMonthly;
+          const principal = emi - interest;
+          principalPaid += principal;
+          interestPaid += interest;
+          balance -= principal;
+        }
+        const row = document.createElement('tr');
+        row.innerHTML = '<td>Year ' + year + '</td><td>' + formatCurrency(Math.round(principalPaid)) + '</td><td>' + formatCurrency(Math.round(interestPaid)) + '</td><td>' + formatCurrency(Math.max(0, Math.round(balance))) + '</td>';
+        tbody.appendChild(row);
+      }
+    }
+
+    document.getElementById('emiLoanAmount').addEventListener('input', updateEMICalculator);
+    document.getElementById('emiRate').addEventListener('input', updateEMICalculator);
+    document.getElementById('emiTenure').addEventListener('input', updateEMICalculator);
+
+    // Initialize
+    updateEMICalculator();
+
+    // PDF download placeholder
+    function downloadEMIPDF() {
+      alert('PDF report download started. This will include your EMI details, chart, and amortization schedule.');
+    }
+  </script>
+</body>
+</html>

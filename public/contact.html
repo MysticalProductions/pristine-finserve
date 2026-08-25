@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Pristine Finserve</title>
+  <meta name="description" content="Get in touch with Pristine Finserve. Call us, visit our office, or fill the inquiry form for quick assistance on loans and financial services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1F44'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23D4A843' font-size='18' font-weight='bold' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><div class="logo-icon">PF</div><span class="logo-text">Pristine<span>Finserve</span></span></a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="loans.html" class="nav-link">Loans</a>
+        <a href="calculators.html" class="nav-link">Calculators</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <div class="nav-cta">
+          <a href="tel:+919899360744" class="btn btn-gold btn-sm"><i class="bi bi-telephone"></i> Call Now</a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero page-hero-sm">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+      <h1 data-aos="fade-up">Get In Touch</h1>
+      <p data-aos="fade-up" data-aos-delay="100">We're here to help. Reach out to us anytime for financial assistance.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="inquiry">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-right">
+          <h3 style="margin-bottom:var(--space-2);">Send Us a Message</h3>
+          <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);">Fill the form below and we'll get back to you within 30 minutes.</p>
+          <form id="contactForm" onsubmit="handleFormSubmit(event, this)">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" class="form-control" placeholder="Your phone" required>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label>Service Required *</label>
+                <select class="form-control" required>
+                  <option value="">Select service</option>
+                  <option>Home Loan</option>
+                  <option>Personal Loan</option>
+                  <option>Business Loan</option>
+                  <option>Education Loan</option>
+                  <option>Vehicle Loan</option>
+                  <option>Loan Against Property</option>
+                  <option>Investment Advisory</option>
+                  <option>Insurance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Loan Amount (₹)</label>
+              <input type="number" class="form-control" placeholder="Approximate amount needed">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..." style="resize:vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+              Submit Inquiry <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div data-aos="fade-left">
+          <div class="section-header-left" style="margin-bottom:var(--space-8);">
+            <span class="section-label">Contact Info</span>
+            <h2 class="section-title">Let's Discuss Your<br>Financial Goals</h2>
+          </div>
+
+          <div class="contact-info-grid">
+            <div class="contact-card">
+              <div class="icon"><i class="bi bi-telephone"></i></div>
+              <h6>Phone</h6>
+              <p>+91 9899360744<br></p>
+            </div>
+            <div class="contact-card">
+              <div class="icon"><i class="bi bi-envelope"></i></div>
+              <h6>Email</h6>
+              <p>info@pristinefinserve.com<br>info@pristinefinserve.com</p>
+            </div>
+            <div class="contact-card">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <h6>Head Office</h6>
+              <p>RT-89 &amp; 104, Tower C, Urbtech Trade Center,<br>B Block, Sector 132, Noida, Uttar Pradesh-201304</p>
+            </div>
+            <div class="contact-card">
+              <div class="icon"><i class="bi bi-clock"></i></div>
+              <h6>Working Hours</h6>
+              <p>Mon - Sat: 9:30 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div style="margin-top:var(--space-8);">
+            <h5 style="margin-bottom:var(--space-4);">Our Office</h5>
+            <div style="display:grid;grid-template-columns:1fr;gap:var(--space-4);">
+              <div style="padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-md);">
+                <div style="font-weight:600;color:var(--color-royal-blue);margin-bottom:var(--space-1);">Noida (Head Office)</div>
+                <div style="font-size:var(--text-sm);color:var(--color-text-secondary);">RT-89 &amp; 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section-light" style="padding:var(--space-12) 0;">
+    <div class="container">
+      <div class="map-wrapper" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps?q=Urbtech+Trade+Center,+Sector+132,+Noida,+Uttar+Pradesh+201304&output=embed&z=15" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <span class="section-label" style="color:var(--color-gold);">Need Immediate Help?</span>
+        <h2 class="display-2" style="color:var(--color-deep-navy);">Call Us Right Now</h2>
+        <p>Our experts are available Monday to Saturday to assist you with your financial needs.</p>
+        <div class="cta-actions">
+          <a href="tel:+919899360744" class="btn btn-gold btn-lg"><i class="bi bi-telephone"></i> +91 9899360744</a>
+          <a href="https://wa.me/919899360744" class="btn btn-outline btn-lg" target="_blank"><i class="bi bi-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Pristine<span>Finserve</span></h4>
+          <p>Your trusted partner in financial solutions.</p>
+          <div class="footer-social"><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></div>
+        </div>
+        <div><h5>Links</h5><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h5>Loans</h5><ul class="footer-links"><li><a href="loan-detail.html?type=home">Home Loan</a></li><li><a href="loan-detail.html?type=personal">Personal Loan</a></li><li><a href="loan-detail.html?type=business">Business Loan</a></li></ul></div>
+        <div><h5>Contact</h5><ul class="footer-contact"><li><i class="bi bi-geo-alt"></i> RT-89 &amp; 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304</li><li><i class="bi bi-telephone"></i> +91 9899360744</li><li><i class="bi bi-envelope"></i> info@pristinefinserve.com</li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Pristine Finserve</p><div class="footer-bottom-links"><a href="/privacy-policy">Privacy Policy</a><a href="/terms-of-service">Terms of Service</a><a href="/disclaimer">Disclaimer</a></div></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919899360744" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>AOS.init({duration:600,once:true,offset:100,easing:'ease-out-cubic'});</script>
+</body>
+</html>

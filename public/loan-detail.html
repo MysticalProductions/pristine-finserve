@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="loanTitle">Home Loan – Pristine Finserve</title>
+  <meta name="description" content="Get the best home loan rates starting 8.40% p.a. with up to ₹10 Cr sanction and 30 years tenure. Apply now for quick approval.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1F44'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23D4A843' font-size='18' font-weight='bold' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Loan-specific page overrides */
+    .loan-hero-gradient { background: linear-gradient(135deg, var(--color-deep-navy), #0f2b5e); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">PF</div>
+        <span class="logo-text">Pristine<span>Finserve</span></span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">About <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="about.html" class="nav-dropdown-link"><i class="bi bi-building"></i> About Us</a>
+            <a href="about.html#team" class="nav-dropdown-link"><i class="bi bi-people"></i> Our Team</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Services <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="nav-dropdown-link"><i class="bi bi-grid"></i> All Services</a>
+            <a href="services.html#consulting" class="nav-dropdown-link"><i class="bi bi-chat-dots"></i> Financial Consulting</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link active">Loans <i class="bi bi-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="loans.html" class="nav-dropdown-link"><i class="bi bi-bank"></i> All Loan Products</a>
+            <a href="loan-detail.html?type=home" class="nav-dropdown-link"><i class="bi bi-house"></i> Home Loan</a>
+            <a href="loan-detail.html?type=personal" class="nav-dropdown-link"><i class="bi bi-person"></i> Personal Loan</a>
+            <a href="loan-detail.html?type=business" class="nav-dropdown-link"><i class="bi bi-briefcase"></i> Business Loan</a>
+            <a href="loan-detail.html?type=education" class="nav-dropdown-link"><i class="bi bi-book"></i> Education Loan</a>
+            <a href="loan-detail.html?type=vehicle" class="nav-dropdown-link"><i class="bi bi-car-front"></i> Vehicle Loan</a>
+            <a href="loan-detail.html?type=property" class="nav-dropdown-link"><i class="bi bi-building"></i> Loan Against Property</a>
+          </div>
+        </div>
+        <a href="calculators.html" class="nav-link">Calculators</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-sm">Get Started</a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Loan Detail Hero -->
+  <section class="loan-hero-gradient" id="loanHero" style="padding:calc(var(--navbar-height) + var(--space-16)) 0 var(--space-16);color:var(--color-white);">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep"> / </span>
+        <a href="loans.html">Loans</a><span class="sep"> / </span>
+        <span id="breadcrumbLoanName">Home Loan</span>
+      </div>
+      <div class="loan-detail-grid">
+        <div>
+          <h1 id="loanHeroTitle">Home Loan</h1>
+          <p id="loanHeroDesc" style="color:rgba(255,255,255,0.7);margin-bottom:var(--space-6);font-size:var(--text-lg);">
+            Affordable home loans with attractive interest rates. Purchase your dream home, construct, or renovate with our tailored home loan solutions.
+          </p>
+          <div class="rate-badge">
+            Interest Rate Starting From <span id="loanHeroRate">8.40%</span> p.a.
+          </div>
+          <div style="display:flex;gap:var(--space-4);margin-top:var(--space-6);flex-wrap:wrap;">
+            <a href="contact.html#inquiry" class="btn btn-gold btn-lg">Apply Now <i class="bi bi-arrow-right"></i></a>
+            <a href="calculators.html#emi" class="btn btn-outline btn-lg"><i class="bi bi-calculator"></i> Calculate EMI</a>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-xl);padding:var(--space-8);backdrop-filter:blur(10px);">
+          <h4 style="color:var(--color-white);margin-bottom:var(--space-4);">Quick Application</h4>
+          <form onsubmit="handleFormSubmit(event, this)">
+            <div class="form-group"><label style="color:rgba(255,255,255,0.7);">Name</label><input type="text" class="form-control dark-input" required></div>
+            <div class="form-group"><label style="color:rgba(255,255,255,0.7);">Phone</label><input type="tel" class="form-control dark-input" required></div>
+            <div class="form-group"><label style="color:rgba(255,255,255,0.7);">Amount Needed (₹)</label><input type="number" class="form-control dark-input" required></div>
+            <button type="submit" class="btn btn-gold" style="width:100%;">Get Expert Callback <i class="bi bi-telephone"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loan Benefits -->
+  <section class="section" id="benefits">
+    <div class="container">
+      <div class="section-header-left" data-aos="fade-up">
+        <span class="section-label">Benefits</span>
+        <h2 class="section-title">Why Choose Our <span id="benefitLoanName">Home Loan</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);">
+        <div class="card" data-aos="fade-up"><div class="card-icon blue"><i class="bi bi-percent"></i></div><h5>Lowest Interest Rates</h5><p>We compare 50+ banks to get you the most competitive rates with zero hidden charges.</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100"><div class="card-icon green"><i class="bi bi-lightning"></i></div><h5>Quick Approval</h5><p>Streamlined process with in-principle approval within 24 hours of application.</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200"><div class="card-icon gold"><i class="bi bi-file-earmark-text"></i></div><h5>Minimal Documentation</h5><p>Upload basic KYC and income documents. Our team handles the rest.</p></div>
+        <div class="card" data-aos="fade-up"><div class="card-icon purple"><i class="bi bi-arrow-left-right"></i></div><h5>Balance Transfer</h5><p>Transfer your existing loan to get lower rates and save thousands on interest.</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100"><div class="card-icon red"><i class="bi bi-clock"></i></div><h5>Flexible Tenure</h5><p>Choose a repayment period that suits your cash flow, from 1 to 30 years.</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200"><div class="card-icon blue"><i class="bi bi-shield-check"></i></div><h5>No Hidden Charges</h5><p>Full transparency on all fees and charges. What you see is what you pay.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Criteria -->
+  <section class="section section-light" id="eligibility">
+    <div class="container">
+      <div class="section-header-left" data-aos="fade-up">
+        <span class="section-label">Eligibility</span>
+        <h2 class="section-title">Eligibility Criteria</h2>
+      </div>
+      <div style="overflow-x:auto;" data-aos="fade-up">
+        <table class="eligibility-table">
+          <thead>
+            <tr><th>Criteria</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Age</td><td>21 - 65 years</td></tr>
+            <tr><td>Minimum Income</td><td>₹25,000 per month (Salaried) | ₹3 Lakhs per annum (Self-employed)</td></tr>
+            <tr><td>Employment</td><td>Salaried / Self-employed / Business</td></tr>
+            <tr><td>CIBIL Score</td><td>750+ (preferred)</td></tr>
+            <tr><td>Work Experience</td><td>2+ years total | 1+ year with current employer</td></tr>
+            <tr><td>Property Age</td><td>Up to 30 years (for resale properties)</td></tr>
+            <tr><td>Loan Amount</td><td>Up to 90% of property value</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Required Documents -->
+  <section class="section" id="documents">
+    <div class="container">
+      <div class="section-header-left" data-aos="fade-up">
+        <span class="section-label">Documents</span>
+        <h2 class="section-title">Required Documents</h2>
+      </div>
+      <div class="doc-list">
+        <div class="doc-item">Identity Proof (Aadhaar/PAN/Passport)</div>
+        <div class="doc-item">Address Proof (Utility Bill/Aadhaar)</div>
+        <div class="doc-item">Income Proof (Salary Slips/IT Returns)</div>
+        <div class="doc-item">Bank Statements (Last 6 months)</div>
+        <div class="doc-item">Property Documents</div>
+        <div class="doc-item">Employment Letter/Business Proof</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Process -->
+  <section class="section section-light" id="process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Process</span>
+        <h2 class="section-title">Application Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" data-aos="fade-up">
+          <div class="step-number">1</div>
+          <h6>Submit Application</h6>
+          <p>Fill the online form with your details and requirements.</p>
+        </div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">2</div>
+          <h6>Document Upload</h6>
+          <p>Upload KYC and income documents securely online.</p>
+        </div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">3</div>
+          <h6>Verification</h6>
+          <p>Our team verifies documents and does credit assessment.</p>
+        </div>
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">4</div>
+          <h6>Approval & Disbursal</h6>
+          <p>Loan sanctioned and amount disbursed to your account.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI Example -->
+  <section class="section" id="emi-example">
+    <div class="container">
+      <div class="section-header-left" data-aos="fade-up">
+        <span class="section-label">EMI Examples</span>
+        <h2 class="section-title">Sample EMI Calculations</h2>
+      </div>
+      <div style="overflow-x:auto;" data-aos="fade-up">
+        <table class="eligibility-table" style="min-width:600px;">
+          <thead>
+            <tr><th>Loan Amount (₹)</th><th>Tenure</th><th>Rate (p.a.)</th><th>Monthly EMI (₹)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>30,00,000</td><td>20 Years</td><td>8.40%</td><td>25,842</td></tr>
+            <tr><td>50,00,000</td><td>20 Years</td><td>8.40%</td><td>43,070</td></tr>
+            <tr><td>75,00,000</td><td>25 Years</td><td>8.50%</td><td>60,371</td></tr>
+            <tr><td>1,00,00,000</td><td>25 Years</td><td>8.50%</td><td>80,495</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-light" id="faqs">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">FAQs</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div style="max-width:800px;margin:0 auto;" data-aos="fade-up">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is the minimum CIBIL score required for a home loan?
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer"><p>Most banks prefer a CIBIL score of 750 or above. However, we work with multiple lenders who may consider scores between 650-750 with slightly different terms.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I transfer my existing home loan to get a lower rate?
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer"><p>Yes, you can transfer your home loan balance to another bank offering lower interest rates. We can help you with the entire balance transfer process.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What documents are required for a home loan?
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer"><p>Basic documents include identity proof (Aadhaar/PAN), address proof, income proof (salary slips/IT returns), bank statements for 6 months, and property documents.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How long does home loan approval take?
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer"><p>In-principle approval can be obtained within 24-48 hours. Final approval and disbursal typically takes 7-14 working days after complete documentation.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is the maximum home loan I can get?
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer"><p>You can get up to ₹10 Crores depending on your income, property value, and repayment capacity. We offer up to 90% of the property value as loan.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Brochure -->
+  <section class="section" id="brochure">
+    <div class="container" style="text-align:center;">
+      <div data-aos="fade-up">
+        <span class="section-label">Resources</span>
+        <h2 class="section-title" style="margin-bottom:var(--space-6);">Download Brochure</h2>
+        <p style="margin-bottom:var(--space-8);color:var(--color-text-secondary);">Get detailed information about our loan products, interest rates, and terms.</p>
+        <a href="#" class="btn btn-primary btn-lg" onclick="alert('Brochure download started');return false;">
+          <i class="bi bi-download"></i> Download Brochure (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <span class="section-label" style="color:var(--color-gold);">Ready to Apply?</span>
+        <h2 class="display-2" style="color:var(--color-deep-navy);">Get Your Loan Approved Today</h2>
+        <p>Our experts are ready to help you with the best rates and minimal documentation.</p>
+        <div class="cta-actions">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-lg">Apply Now <i class="bi bi-arrow-right"></i></a>
+          <a href="tel:+919899360744" class="btn btn-outline btn-lg"><i class="bi bi-telephone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Pristine<span>Finserve</span></h4>
+          <p>Your trusted partner in financial solutions since 2011.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div><h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="calculators.html">Calculators</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div><h5>Loan Products</h5>
+          <ul class="footer-links">
+            <li><a href="loan-detail.html?type=home">Home Loan</a></li>
+            <li><a href="loan-detail.html?type=personal">Personal Loan</a></li>
+            <li><a href="loan-detail.html?type=business">Business Loan</a></li>
+            <li><a href="loan-detail.html?type=education">Education Loan</a></li>
+            <li><a href="loan-detail.html?type=vehicle">Vehicle Loan</a></li>
+            <li><a href="loan-detail.html?type=property">Loan Against Property</a></li>
+          </ul>
+        </div>
+        <div><h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> RT-89 &amp; 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304</li>
+            <li><i class="bi bi-telephone"></i> +91 9899360744</li>
+            <li><i class="bi bi-envelope"></i> info@pristinefinserve.com</li>
+            <li><i class="bi bi-clock"></i> Mon - Sat: 9:30 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pristine Finserve</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/disclaimer">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919899360744" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init({duration:600,once:true,offset:100,easing:'ease-out-cubic'});
+
+    // Dynamically load loan data from URL param
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const type = params.get('type') || 'home';
+      const loans = {
+        home: { name: 'Home Loan', rate: '8.40%', desc: 'Affordable home loans with attractive interest rates. Purchase your dream home, construct, or renovate with our tailored home loan solutions.' },
+        personal: { name: 'Personal Loan', rate: '10.50%', desc: 'Instant personal loans up to ₹25 Lakhs with minimal documentation and quick disbursal within 24 hours.' },
+        business: { name: 'Business Loan', rate: '9.00%', desc: 'Funding solutions for your business growth with flexible repayment options and competitive rates.' },
+        education: { name: 'Education Loan', rate: '11.00%', desc: 'Fund your education dreams with loans up to ₹1 Cr and flexible repayment after course completion.' },
+        vehicle: { name: 'Vehicle Loan', rate: '7.50%', desc: 'New and used car loans with quick approval and competitive interest rates starting from 7.50% p.a.' },
+        property: { name: 'Loan Against Property', rate: '8.50%', desc: 'Unlock the value of your property with high-value loans at competitive interest rates.' }
+      };
+      const loan = loans[type] || loans.home;
+      document.title = loan.name + ' – Pristine Finserve';
+      document.getElementById('loanTitle').textContent = loan.name + ' – Pristine Finserve';
+      document.getElementById('breadcrumbLoanName').textContent = loan.name;
+      document.getElementById('loanHeroTitle').textContent = loan.name;
+      document.getElementById('loanHeroDesc').textContent = loan.desc;
+      document.getElementById('loanHeroRate').textContent = loan.rate;
+      document.getElementById('benefitLoanName').textContent = loan.name;
+    })();
+  </script>
+</body>
+</html>

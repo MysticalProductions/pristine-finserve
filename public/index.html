@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pristine Finserve – Trusted Financial Solutions & Loan Consultancy</title>
+  <meta name="description" content="Pristine Finserve offers expert financial consultancy, home loans, personal loans, business loans, and investment advisory. Trusted by 10,000+ happy customers.">
+  <meta name="keywords" content="financial services, loan consultancy, home loan, personal loan, business loan, investment advisory, India">
+  <meta property="og:title" content="Pristine Finserve – Trusted Financial Solutions">
+  <meta property="og:description" content="Expert financial consultancy and loan services. Get the best rates and personalized solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pristinefinserve.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1F44'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23D4A843' font-size='18' font-weight='bold' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Inline critical styles to prevent FOUC */
+    .navbar { opacity: 0; animation: fadeInDown 0.5s ease 0.1s forwards; }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    .hero { opacity: 0; animation: heroFade 0.8s ease 0.2s forwards; }
+    @keyframes heroFade { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">PF</div>
+        <span class="logo-text">Pristine<span>Finserve</span></span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">About <i class="bi bi-chevron-down" style="font-size:10px;margin-left:2px;"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="about.html" class="nav-dropdown-link"><i class="bi bi-building"></i> About Us</a>
+            <a href="about.html#team" class="nav-dropdown-link"><i class="bi bi-people"></i> Our Team</a>
+            <a href="about.html#timeline" class="nav-dropdown-link"><i class="bi bi-clock-history"></i> Our Journey</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Services <i class="bi bi-chevron-down" style="font-size:10px;margin-left:2px;"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="nav-dropdown-link"><i class="bi bi-grid"></i> All Services</a>
+            <a href="services.html#consulting" class="nav-dropdown-link"><i class="bi bi-chat-dots"></i> Financial Consulting</a>
+            <a href="services.html#advisory" class="nav-dropdown-link"><i class="bi bi-graph-up-arrow"></i> Investment Advisory</a>
+            <a href="services.html#insurance" class="nav-dropdown-link"><i class="bi bi-shield-check"></i> Insurance Assistance</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Loans <i class="bi bi-chevron-down" style="font-size:10px;margin-left:2px;"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="loans.html" class="nav-dropdown-link"><i class="bi bi-bank"></i> All Loan Products</a>
+            <a href="loan-detail.html?type=home" class="nav-dropdown-link"><i class="bi bi-house"></i> Home Loan</a>
+            <a href="loan-detail.html?type=personal" class="nav-dropdown-link"><i class="bi bi-person"></i> Personal Loan</a>
+            <a href="loan-detail.html?type=business" class="nav-dropdown-link"><i class="bi bi-briefcase"></i> Business Loan</a>
+            <a href="loan-detail.html?type=education" class="nav-dropdown-link"><i class="bi bi-book"></i> Education Loan</a>
+            <a href="loan-detail.html?type=vehicle" class="nav-dropdown-link"><i class="bi bi-car-front"></i> Vehicle Loan</a>
+            <a href="loan-detail.html?type=property" class="nav-dropdown-link"><i class="bi bi-building"></i> Loan Against Property</a>
+          </div>
+        </div>
+
+        <a href="calculators.html" class="nav-link">Calculators</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <div class="nav-cta">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-sm">Get Started</a>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="container" style="min-height: calc(100vh - var(--navbar-height)); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+        <div class="hero-badge">
+          <i class="bi bi-shield-check"></i> Trusted by 10,000+ Customers
+        </div>
+        <h1 class="hero-title">
+          Your Gateway to<br>
+          <span class="highlight">Financial Freedom</span>
+        </h1>
+        <p class="hero-description">
+          Expert financial consultancy and tailored loan solutions to help you achieve your dreams. 
+          We partner with 50+ banks and NBFCs to bring you the best rates.
+        </p>
+        <div class="hero-actions">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-lg">
+            Apply Now <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="calculators.html" class="btn btn-outline btn-lg">
+            <i class="bi bi-calculator"></i> Check Eligibility
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <h3><span class="counter" data-target="50">0</span>+</h3>
+            <p>Bank Partners</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3><span class="counter" data-target="10000">0</span>+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3><span class="counter" data-target="500">0</span>Cr+</h3>
+            <p>Loans Sanctioned</p>
+          </div>
+          <div class="hero-stat-item">
+            <h3><span class="counter" data-target="98">0</span>%</h3>
+            <p>Approval Rate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-form-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        <h4>Quick Loan Inquiry</h4>
+        <p>Get a callback within 30 minutes</p>
+        <form id="heroInquiryForm" onsubmit="handleFormSubmit(event, this)">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control dark-input" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control dark-input" placeholder="Enter your phone" required>
+          </div>
+          <div class="form-group">
+            <label>Loan Type</label>
+            <select class="form-control dark-input" required>
+              <option value="">Select loan type</option>
+              <option>Home Loan</option>
+              <option>Personal Loan</option>
+              <option>Business Loan</option>
+              <option>Education Loan</option>
+              <option>Vehicle Loan</option>
+              <option>Loan Against Property</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Loan Amount (₹)</label>
+            <input type="number" class="form-control dark-input" placeholder="Enter amount" required>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg" style="width:100%;">
+            Get Expert Callback <i class="bi bi-telephone"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS COUNTER SECTION
+  ============================================================ -->
+  <section class="section section-dark" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon">🏦</div>
+          <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+          <div class="stat-label">Banking Partners</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon">👥</div>
+          <div class="stat-number"><span class="counter" data-target="10000">0</span>+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon">📈</div>
+          <div class="stat-number"><span class="counter" data-target="500">0</span>Cr+</div>
+          <div class="stat-label">Loans Sanctioned</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Comprehensive Financial Solutions</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          From personal loans to investment advisory, we offer end-to-end financial solutions 
+          tailored to your needs.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="card service-card" data-aos="fade-up">
+          <div class="card-icon blue"><i class="bi bi-house"></i></div>
+          <h4>Home Loans</h4>
+          <p>Dream home with affordable EMIs and attractive interest rates starting from 8.40% p.a.</p>
+          <a href="loan-detail.html?type=home" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon green"><i class="bi bi-person"></i></div>
+          <h4>Personal Loans</h4>
+          <p>Instant personal loans with minimal documentation and quick disbursal within 24 hours.</p>
+          <a href="loan-detail.html?type=personal" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon gold"><i class="bi bi-briefcase"></i></div>
+          <h4>Business Loans</h4>
+          <p>Funding solutions for your business growth with flexible repayment options.</p>
+          <a href="loan-detail.html?type=business" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="card service-card" data-aos="fade-up">
+          <div class="card-icon purple"><i class="bi bi-graph-up-arrow"></i></div>
+          <h4>Investment Advisory</h4>
+          <p>Strategic investment guidance to grow your wealth with expert portfolio management.</p>
+          <a href="services.html#advisory" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon red"><i class="bi bi-shield-check"></i></div>
+          <h4>Insurance Assistance</h4>
+          <p>Comprehensive insurance plans to protect what matters most to you and your family.</p>
+          <a href="services.html#insurance" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon blue"><i class="bi bi-bank"></i></div>
+          <h4>Loan Against Property</h4>
+          <p>Unlock the value of your property with high-value loans at competitive interest rates.</p>
+          <a href="loan-detail.html?type=property" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED LOAN PRODUCTS SECTION
+  ============================================================ -->
+  <section class="section section-light" id="loan-products">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Loan Products</span>
+        <h2 class="section-title">Loans Designed for Every Need</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Choose from our wide range of loan products with competitive rates and flexible tenures.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="card loan-card" data-aos="fade-up">
+          <div class="loan-image" style="background-image: linear-gradient(135deg, #1B5AAE, #0A1F44);"></div>
+          <span class="loan-badge">Starting 8.40% p.a.</span>
+          <h4>Home Loan</h4>
+          <div class="loan-rate">8.40% <span>p.a.</span></div>
+          <ul class="loan-features">
+            <li>Up to ₹10 Cr sanctioned</li>
+            <li>Up to 30 years tenure</li>
+            <li>Minimal documentation</li>
+          </ul>
+          <div style="display:flex;gap:var(--space-3);">
+            <a href="loan-detail.html?type=home" class="btn btn-outline-primary btn-sm" style="flex:1;">Details</a>
+            <a href="contact.html#inquiry" class="btn btn-primary btn-sm" style="flex:1;">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="card loan-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="loan-image" style="background-image: linear-gradient(135deg, #10B981, #065F46);"></div>
+          <span class="loan-badge">Starting 10.50% p.a.</span>
+          <h4>Personal Loan</h4>
+          <div class="loan-rate">10.50% <span>p.a.</span></div>
+          <ul class="loan-features">
+            <li>Up to ₹25 Lakhs</li>
+            <li>Instant approval</li>
+            <li>No collateral needed</li>
+          </ul>
+          <div style="display:flex;gap:var(--space-3);">
+            <a href="loan-detail.html?type=personal" class="btn btn-outline-primary btn-sm" style="flex:1;">Details</a>
+            <a href="contact.html#inquiry" class="btn btn-primary btn-sm" style="flex:1;">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="card loan-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="loan-image" style="background-image: linear-gradient(135deg, #D4A843, #A8812A);"></div>
+          <span class="loan-badge">Starting 9.00% p.a.</span>
+          <h4>Business Loan</h4>
+          <div class="loan-rate">9.00% <span>p.a.</span></div>
+          <ul class="loan-features">
+            <li>Up to ₹50 Cr funding</li>
+            <li>Flexible repayment</li>
+            <li>Minimal paperwork</li>
+          </ul>
+          <div style="display:flex;gap:var(--space-3);">
+            <a href="loan-detail.html?type=business" class="btn btn-outline-primary btn-sm" style="flex:1;">Details</a>
+            <a href="contact.html#inquiry" class="btn btn-primary btn-sm" style="flex:1;">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-10);" data-aos="fade-up">
+        <a href="loans.html" class="btn btn-outline-primary btn-lg">
+          View All Loan Products <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US SECTION
+  ============================================================ -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Why Pristine Finserve</span>
+        <h2 class="section-title">Why Thousands Trust Us</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          We combine expertise, transparency, and personalized service to deliver 
+          the best financial outcomes.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item" data-aos="fade-up">
+          <div class="why-icon"><i class="bi bi-currency-exchange"></i></div>
+          <div class="why-content">
+            <h5>Best Interest Rates</h5>
+            <p>We compare 50+ banks and NBFCs to get you the most competitive interest rates available.</p>
+          </div>
+        </div>
+
+        <div class="why-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="why-icon"><i class="bi bi-lightning"></i></div>
+          <div class="why-content">
+            <h5>Quick Processing</h5>
+            <p>Streamlined digital application process with approvals in as little as 24 hours.</p>
+          </div>
+        </div>
+
+        <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <div class="why-content">
+            <h5>Minimal Documentation</h5>
+            <p>We handle the paperwork. Just upload basic documents and we take care of the rest.</p>
+          </div>
+        </div>
+
+        <div class="why-item" data-aos="fade-up">
+          <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+          <div class="why-content">
+            <h5>100% Transparency</h5>
+            <p>No hidden charges, no surprises. Complete fee disclosure before you sign anything.</p>
+          </div>
+        </div>
+
+        <div class="why-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="why-icon"><i class="bi bi-headset"></i></div>
+          <div class="why-content">
+            <h5>Dedicated Support</h5>
+            <p>Personal relationship manager assigned to every customer for end-to-end assistance.</p>
+          </div>
+        </div>
+
+        <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="why-content">
+            <h5>Expert Guidance</h5>
+            <p>15+ years of financial expertise with certified advisors guiding you at every step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CALCULATORS PREVIEW SECTION
+  ============================================================ -->
+  <section class="section section-light" id="calculators">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Financial Calculators</span>
+        <h2 class="section-title">Plan Your Finances Smartly</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Use our interactive calculators to plan your loans, investments, and EMIs with real-time results.
+        </p>
+      </div>
+
+      <div class="calculator-grid">
+        <a href="calculators.html#emi" class="calc-card" data-aos="fade-up">
+          <div class="icon">📊</div>
+          <h5>EMI Calculator</h5>
+          <p>Calculate monthly installments instantly</p>
+        </a>
+        <a href="calculators.html#home" class="calc-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon">🏠</div>
+          <h5>Home Loan Calculator</h5>
+          <p>Plan your dream home budget</p>
+        </a>
+        <a href="calculators.html#sip" class="calc-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon">📈</div>
+          <h5>SIP Calculator</h5>
+          <p>Estimate your investment returns</p>
+        </a>
+        <a href="calculators.html#eligibility" class="calc-card" data-aos="fade-up">
+          <div class="icon">✅</div>
+          <h5>Affordability/Eligibility Calculator</h5>
+          <p>Check your loan eligibility</p>
+        </a>
+        <a href="calculators.html#interest" class="calc-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon">💰</div>
+          <h5>Interest Calculator</h5>
+          <p>Compare interest scenarios</p>
+        </a>
+        <a href="calculators.html#investment" class="calc-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon">📊</div>
+          <h5>Returns Calculator</h5>
+          <p>Project investment growth</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PARTNERS CAROUSEL
+  ============================================================ -->
+  <section class="section-sm" id="partners">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" style="margin-bottom:var(--space-8);">
+        <span class="section-label">Our Partners</span>
+        <h2 class="section-title">Trusted by Leading Banks & NBFCs</h2>
+      </div>
+    </div>
+    <div class="partners-wrapper" data-aos="fade-up">
+      <div class="partners-track" id="partnersTrack">
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=SBI" alt="SBI"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/FEF3E8/D4A843?text=HDFC" alt="HDFC"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=ICICI" alt="ICICI"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/F0FDF4/10B981?text=AXIS" alt="AXIS"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/FEF3E8/D4A843?text=Kotak" alt="Kotak"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=Yes+Bank" alt="Yes Bank"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/F0FDF4/10B981?text=BAJAJ" alt="BAJAJ"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=PNB" alt="PNB"></div>
+        <!-- Duplicate for seamless scroll -->
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=SBI" alt="SBI"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/FEF3E8/D4A843?text=HDFC" alt="HDFC"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=ICICI" alt="ICICI"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/F0FDF4/10B981?text=AXIS" alt="AXIS"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/FEF3E8/D4A843?text=Kotak" alt="Kotak"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=Yes+Bank" alt="Yes Bank"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/F0FDF4/10B981?text=BAJAJ" alt="BAJAJ"></div>
+        <div class="partner-logo"><img src="https://via.placeholder.com/160x60/E8F0FE/1B5AAE?text=PNB" alt="PNB"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+  <section class="section section-light" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Real stories from real customers who achieved their financial goals with us.
+        </p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);">
+        <div class="testimonial-card" data-aos="fade-up">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "Pristine Finserve made my home loan process incredibly smooth. They found me the best rate 
+            and handled all the paperwork. I saved over ₹2.5 lakhs compared to other lenders!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=11" alt="Rahul Sharma" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-info">
+              <h6>Rahul Sharma</h6>
+              <span>Home Loan, Noida</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "As a startup founder, getting a business loan was challenging. The team at Pristine Finserve 
+            understood my vision and secured funding within a week. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=32" alt="Priya Patel" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-info">
+              <h6>Priya Patel</h6>
+              <span>Business Loan, Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "Their investment advisory service transformed my portfolio. Professional, transparent, 
+            and always available. My wealth has grown 35% in just one year with their guidance."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=45" alt="Amit Verma" class="testimonial-avatar" loading="lazy">
+            <div class="testimonial-info">
+              <h6>Amit Verma</h6>
+              <span>Investment Client, Bangalore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-10);" data-aos="fade-up">
+        <a href="testimonials.html" class="btn btn-outline-primary btn-lg">
+          View All Reviews <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BLOG PREVIEW SECTION
+  ============================================================ -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Blog</span>
+        <h2 class="section-title">Latest Financial Insights</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          Expert advice, market updates, and tips to help you make smarter financial decisions.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card" data-aos="fade-up">
+          <div class="blog-card-image" style="background-image: linear-gradient(135deg, #1B5AAE, #0A1F44);">
+            <span class="blog-card-category">Home Loan</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="bi bi-calendar3"></i> Jun 15, 2026</span>
+              <span><i class="bi bi-clock"></i> 5 min read</span>
+            </div>
+            <h5>Top 10 Tips to Get Your Home Loan Approved Faster</h5>
+            <p>Discover proven strategies to improve your home loan approval chances with expert tips...</p>
+            <a href="blog-single.html" class="card-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-card-image" style="background-image: linear-gradient(135deg, #D4A843, #A8812A);">
+            <span class="blog-card-category">Investment</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="bi bi-calendar3"></i> Jun 10, 2026</span>
+              <span><i class="bi bi-clock"></i> 7 min read</span>
+            </div>
+            <h5>Smart Investment Strategies for 2026: A Complete Guide</h5>
+            <p>Navigate the 2026 market with confidence. Expert analysis and actionable investment strategies...</p>
+            <a href="blog-single.html" class="card-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-card-image" style="background-image: linear-gradient(135deg, #10B981, #065F46);">
+            <span class="blog-card-category">Personal Finance</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="bi bi-calendar3"></i> Jun 5, 2026</span>
+              <span><i class="bi bi-clock"></i> 4 min read</span>
+            </div>
+            <h5>How to Improve Your CIBIL Score for Better Loan Rates</h5>
+            <p>Simple daily habits that can boost your credit score and help you qualify for lower interest rates...</p>
+            <a href="blog-single.html" class="card-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-10);" data-aos="fade-up">
+        <a href="blog.html" class="btn btn-outline-primary btn-lg">
+          View All Articles <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <span class="section-label" style="color:var(--color-gold);">Get Started Today</span>
+        <h2 class="display-2" style="color:var(--color-deep-navy);">
+          Ready to Achieve Your<br>Financial Goals?
+        </h2>
+        <p>
+          Take the first step towards financial freedom. Our experts are ready to help you 
+          find the perfect loan or investment solution tailored to your needs.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html#inquiry" class="btn btn-gold btn-lg">
+            Apply Now <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="tel:+919899360744" class="btn btn-outline btn-lg">
+            <i class="bi bi-telephone"></i> Call Us Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Pristine<span>Finserve</span></h4>
+          <p>
+            Your trusted partner in financial solutions. With 15+ years of expertise and 50+ 
+            banking partnerships, we deliver the best financial outcomes for individuals and businesses.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="loans.html">Loan Products</a></li>
+            <li><a href="calculators.html">Calculators</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Loan Products</h5>
+          <ul class="footer-links">
+            <li><a href="loan-detail.html?type=home">Home Loan</a></li>
+            <li><a href="loan-detail.html?type=personal">Personal Loan</a></li>
+            <li><a href="loan-detail.html?type=business">Business Loan</a></li>
+            <li><a href="loan-detail.html?type=education">Education Loan</a></li>
+            <li><a href="loan-detail.html?type=vehicle">Vehicle Loan</a></li>
+            <li><a href="loan-detail.html?type=property">Loan Against Property</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Contact Info</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              RT-89 &amp; 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              +91 9899360744
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              info@pristinefinserve.com
+            </li>
+            <li>
+              <i class="bi bi-clock"></i>
+              Mon - Sat: 9:30 AM - 7:00 PM
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pristine Finserve. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/disclaimer">Disclaimer</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       WHATSAPP FLOATING BUTTON
+  ============================================================ -->
+  <a href="https://wa.me/919899360744" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+  ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // AOS initialization
+    AOS.init({
+      duration: 600,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+</body>
+</html>
