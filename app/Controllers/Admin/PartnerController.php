@@ -64,7 +64,6 @@ class PartnerController extends BaseController
             'name' => 'required|min:2|max:255',
             'slug' => 'required|min:2|max:255',
             'type' => 'required',
-            'logo' => 'required',
         ]);
 
         if (!empty($errors)) {
@@ -84,6 +83,8 @@ class PartnerController extends BaseController
                 $data['logo'] = $uploaded;
             }
         }
+
+        if (!isset($data['logo'])) $data['logo'] = '';
 
         $data['created_at'] = date('Y-m-d H:i:s');
         $data['updated_at'] = date('Y-m-d H:i:s');
