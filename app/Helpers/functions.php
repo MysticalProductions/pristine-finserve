@@ -164,21 +164,27 @@ function activeClass(string $path, string $class = 'active'): string
 
 function setting(string $key, mixed $default = ''): mixed
 {
-    static $settings = null;
-    if ($settings === null) {
+    global $pf_settings_cache;
+    if ($pf_settings_cache === null) {
         try {
             $db = \Core\Database::instance();
             $prefix = $db->getPrefix();
             $rows = $db->fetchAll("SELECT `key`, `value` FROM {$prefix}settings");
-            $settings = [];
+            $pf_settings_cache = [];
             foreach ($rows as $row) {
-                $settings[$row->key] = $row->value;
+                $pf_settings_cache[$row->key] = $row->value;
             }
         } catch (\Exception $e) {
-            $settings = [];
+            $pf_settings_cache = [];
         }
     }
-    return $settings[$key] ?? $default;
+    return $pf_settings_cache[$key] ?? $default;
+}
+
+function clearSettingsCache(): void
+{
+    global $pf_settings_cache;
+    $pf_settings_cache = null;
 }
 
 function allServices(): array

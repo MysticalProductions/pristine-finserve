@@ -33,10 +33,19 @@ class CalculatorsController extends Controller
     {
         $prefix = Database::instance()->getPrefix();
 
+        // First try to match by slug (unique per calculator).
         $calculator = Database::instance()->fetch(
-            "SELECT * FROM {$prefix}calculators WHERE type = :type AND status = 'active' LIMIT 1",
-            ['type' => $type]
+            "SELECT * FROM {$prefix}calculators WHERE slug = :slug AND status = 'active' LIMIT 1",
+            ['slug' => $type]
         );
+
+        // Fall back to matching by type (group slug such as 'emi', 'sip').
+        if (!$calculator) {
+            $calculator = Database::instance()->fetch(
+                "SELECT * FROM {$prefix}calculators WHERE type = :type AND status = 'active' ORDER BY `order` ASC LIMIT 1",
+                ['type' => $type]
+            );
+        }
 
         if (!$calculator) {
             Response::status(404);

@@ -173,19 +173,21 @@
           <ul class="footer-contact">
             <li>
               <i class="bi bi-geo-alt"></i>
-              <?= htmlspecialchars(setting('address', 'RT-89 & 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304')) ?>
+              <?= htmlspecialchars(setting('contact_address', setting('address', 'RT-89 & 104, Tower C, Urbtech Trade Center, B Block, Sector 132, Noida, Uttar Pradesh-201304'))) ?>
             </li>
             <li>
               <i class="bi bi-telephone"></i>
-              <a href="tel:<?= htmlspecialchars(setting('phone', '+919899360744')) ?>"><?= htmlspecialchars(setting('phone', '+91 9899360744')) ?></a>
+              <?php $footerPhone = setting('contact_phone', setting('phone', '+91 9899360744')); ?>
+              <a href="tel:<?= htmlspecialchars($footerPhone) ?>"><?= htmlspecialchars($footerPhone) ?></a>
             </li>
             <li>
               <i class="bi bi-envelope"></i>
-              <a href="mailto:<?= htmlspecialchars(setting('email', 'info@pristinefinserve.com')) ?>"><?= htmlspecialchars(setting('email', 'info@pristinefinserve.com')) ?></a>
+              <?php $footerEmail = setting('contact_email', setting('email', 'info@pristinefinserve.com')); ?>
+              <a href="mailto:<?= htmlspecialchars($footerEmail) ?>"><?= htmlspecialchars($footerEmail) ?></a>
             </li>
             <li>
               <i class="bi bi-clock"></i>
-              <?= htmlspecialchars(setting('working_hours', 'Mon - Sat: 9:30 AM - 7:00 PM')) ?>
+              <?= htmlspecialchars(setting('contact_hours', setting('working_hours', 'Mon - Sat: 9:30 AM - 7:00 PM'))) ?>
             </li>
           </ul>
         </div>

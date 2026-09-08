@@ -63,6 +63,9 @@ class SettingController extends BaseController
             }
         }
 
+        // Invalidate the cached settings so the frontend reflects changes immediately.
+        clearSettingsCache();
+
         $this->session->flash('success', 'Settings updated successfully.');
         $this->back();
     }

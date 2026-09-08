@@ -76,9 +76,9 @@ ob_start();
           <h5>Affordability/Eligibility Calculator</h5>
           <p>Check your loan eligibility</p>
         </a>
-        <a href="<?= route('calculators/interest') ?>" class="calc-card" data-aos="fade-up" data-aos-delay="100">
+        <a href="<?= route('calculators/emi-vs-sip') ?>" class="calc-card" data-aos="fade-up" data-aos-delay="100">
           <div class="icon">💰</div>
-          <h5>Interest Calculator</h5>
+          <h5>SIP vs EMI Calculator</h5>
           <p>Compare interest scenarios</p>
         </a>
         <a href="<?= route('calculators/lumpsum') ?>" class="calc-card" data-aos="fade-up" data-aos-delay="200">

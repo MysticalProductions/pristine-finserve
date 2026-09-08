@@ -25,7 +25,6 @@
           <select class="form-control" id="type" name="type" required>
             <option value="bank" <?= (($partner['type'] ?? '') === 'bank') ? 'selected' : '' ?>>Bank</option>
             <option value="nbfc" <?= (($partner['type'] ?? '') === 'nbfc') ? 'selected' : '' ?>>NBFC</option>
-            <option value="insurance" <?= (($partner['type'] ?? '') === 'insurance') ? 'selected' : '' ?>>Insurance</option>
             <option value="other" <?= (($partner['type'] ?? '') === 'other') ? 'selected' : '' ?>>Other</option>
           </select>
         </div>

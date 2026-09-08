@@ -396,7 +396,7 @@ ob_start();
   <div class="container">
     <div class="section-header-left" data-aos="fade-up">
       <span class="section-label">Calculator</span>
-      <h2 class="section-title">EMI vs SIP Calculator</h2>
+      <h2 class="section-title">SIP vs EMI Calculator</h2>
       <p class="section-subtitle">Compare the cost of paying off a loan against investing the same amount in a SIP.</p>
     </div>
 
